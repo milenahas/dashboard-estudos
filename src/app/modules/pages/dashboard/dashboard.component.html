@@ -2,153 +2,40 @@
     <div class="row mt-4">
         <div class="col-md-3">
             <div class="card card-principal" style="border: none; height: 90vh; ">
-                <!-- <div class="card-header titulo-card mt-1 ml-2">
-                    <div class="d-flex">
-                        <div class="mr-2">Em andamento
-                            <p data-bs-toggle="tooltip" data-bs-placement="top" title="Informações de cursos que estão em andamento"><i class="fas fa-question-circle" ></i></p>
-                            </div>
-                        <div class="flex-fill mb-2" style="border-bottom: solid 1px #f77f73;"></div>
-                    </div>
-                </div> -->
                 <div class="card-body">
-                    <div class="card card-shadow">
+                    <div class="card card-shadow mt-2" *ngFor="let curso of cursosEmAndamento">
                         <div class="card-body p-0 m-0">
                             <div class="d-flex p-4">
-                                <div class="me-auto"><p class="texto-basico">Angular</p></div>
-                                <div><img src="assets/img/angular.png" style="width: 30px;"></div>
+                                <div class="me-auto"><p class="texto-basico">{{curso.nome}}</p></div>
+                                <div><img [src]="curso.imagem" style="width: 30px;"></div>
                             </div>
                             
-                            <div class="progress-bar" style="width: 100%;" data-bs-toggle="tooltip" data-bs-placement="top" title="Progresso: 100%"></div>
-                        </div>
-                    </div>
-
-                    <div class="card card-shadow mt-2">
-                        <div class="card-body p-0 m-0">
-                            <div class="d-flex p-4">
-                                <div class="me-auto"><p class="texto-basico">React</p></div>
-                                <div><img src="assets/img/react.png" style="width: 30px;"></div>
-                            </div>
-                            
-                            <div class="progress-bar" style="width: 15%;" data-bs-toggle="tooltip" data-bs-placement="top" title="Progresso: 15%"></div>
-                        </div>
-                    </div>
-
-                    <div class="card card-shadow mt-2">
-                        <div class="card-body p-0 m-0">
-                            <div class="d-flex p-4">
-                                <div class="me-auto"><p class="texto-basico">Node.js</p></div>
-                                <div><img src="assets/img/nodejs.png" style="width: 30px;"></div>
-                            </div>
-                            
-                            <div class="progress-bar" style="width: 5%;" data-bs-toggle="tooltip" data-bs-placement="top" title="Progresso: 5%"></div>
-                        </div>
-                    </div>
-                    <div class="card card-shadow mt-2">
-                        <div class="card-body p-0 m-0">
-                            <div class="d-flex p-4">
-                                <div class="me-auto"><p class="texto-basico">Angular</p></div>
-                                <div><img src="assets/img/angular.png" style="width: 30px;"></div>
-                            </div>
-                            
-                            <div class="progress-bar" style="width: 100%;" data-bs-toggle="tooltip" data-bs-placement="top" title="Progresso: 100%"></div>
-                        </div>
-                    </div>
-
-                    <div class="card card-shadow mt-2">
-                        <div class="card-body p-0 m-0">
-                            <div class="d-flex p-4">
-                                <div class="me-auto"><p class="texto-basico">React</p></div>
-                                <div><img src="assets/img/react.png" style="width: 30px;"></div>
-                            </div>
-                            
-                            <div class="progress-bar" style="width: 15%;" data-bs-toggle="tooltip" data-bs-placement="top" title="Progresso: 15%"></div>
-                        </div>
-                    </div>
-
-                    <div class="card card-shadow mt-2">
-                        <div class="card-body p-0 m-0">
-                            <div class="d-flex p-4">
-                                <div class="me-auto"><p class="texto-basico">Node.js</p></div>
-                                <div><img src="assets/img/nodejs.png" style="width: 30px;"></div>
-                            </div>
-                            
-                            <div class="progress-bar" style="width: 5%;" data-bs-toggle="tooltip" data-bs-placement="top" title="Progresso: 5%"></div>
-                        </div>
-                    </div>
-
-                    <div class="card card-shadow mt-2">
-                        <div class="card-body p-0 m-0">
-                            <div class="d-flex p-4">
-                                <div class="me-auto"><p class="texto-basico">Angular</p></div>
-                                <div><img src="assets/img/angular.png" style="width: 30px;"></div>
-                            </div>
-                            
-                            <div class="progress-bar" style="width: 100%;" data-bs-toggle="tooltip" data-bs-placement="top" title="Progresso: 100%"></div>
-                        </div>
-                    </div>
-
-                    <div class="card card-shadow mt-2">
-                        <div class="card-body p-0 m-0">
-                            <div class="d-flex p-4">
-                                <div class="me-auto"><p class="texto-basico">React</p></div>
-                                <div><img src="assets/img/react.png" style="width: 30px;"></div>
-                            </div>
-                            
-                            <div class="progress-bar" style="width: 15%;" data-bs-toggle="tooltip" data-bs-placement="top" title="Progresso: 15%"></div>
-                        </div>
-                    </div>
-
-                    <div class="card card-shadow mt-2">
-                        <div class="card-body p-0 m-0">
-                            <div class="d-flex p-4">
-                                <div class="me-auto"><p class="texto-basico">Node.js</p></div>
-                                <div><img src="assets/img/nodejs.png" style="width: 30px;"></div>
-                            </div>
-                            
-                            <div class="progress-bar" style="width: 5%;" data-bs-toggle="tooltip" data-bs-placement="top" title="Progresso: 5%"></div>
-                        </div>
-                    </div>
-
-                    <div class="card card-shadow mt-2">
-                        <div class="card-body p-0 m-0">
-                            <div class="d-flex p-4">
-                                <div class="me-auto"><p class="texto-basico">Angular</p></div>
-                                <div><img src="assets/img/angular.png" style="width: 30px;"></div>
-                            </div>
-                            
-                            <div class="progress-bar" style="width: 100%;" data-bs-toggle="tooltip" data-bs-placement="top" title="Progresso: 100%"></div>
-                        </div>
-                    </div>
-
-                    <div class="card card-shadow mt-2">
-                        <div class="card-body p-0 m-0">
-                            <div class="d-flex p-4">
-                                <div class="me-auto"><p class="texto-basico">React</p></div>
-                                <div><img src="assets/img/react.png" style="width: 30px;"></div>
-                            </div>
-                            
-                            <div class="progress-bar" style="width: 15%;" data-bs-toggle="tooltip" data-bs-placement="top" title="Progresso: 15%"></div>
-                        </div>
-                    </div>
-
-                    <div class="card card-shadow mt-2">
-                        <div class="card-body p-0 m-0">
-                            <div class="d-flex p-4">
-                                <div class="me-auto"><p class="texto-basico">Node.js</p></div>
-                                <div><img src="assets/img/nodejs.png" style="width: 30px;"></div>
-                            </div>
-                            
-                            <div class="progress-bar" style="width: 5%;" data-bs-toggle="tooltip" data-bs-placement="top" title="Progresso: 5%"></div>
+                            <div class="progress-bar" [ngStyle]="{'width': curso.progresso}" ngbTooltip="Progresso: {{curso.progresso}}"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="col-md">
-            <div class="card">
-                <!-- <div class="card-header"></div> -->
-                <div class="card-body"></div>
+        <div class="col-md-7">
+            <div class="card card-principal" style="border: none; height: 90vh; ">
+                <div class="card-header" style="background: none;">
+                    <p class="sub-title">Exibição de cursos em andamento e finalizados</p>
+                </div>
+                
+                <div class="card-body">
+                    <div id="chart">
+                        <apx-chart
+                          [series]="chartOptions.series"
+                          [chart]="chartOptions.chart"
+                          [colors]="chartOptions.colors"
+                          [xaxis]="chartOptions.xaxis"
+                          [stroke]="chartOptions.stroke"
+                          [tooltip]="chartOptions.tooltip"
+                          [dataLabels]="chartOptions.dataLabels"
+                        ></apx-chart>
+                      </div>
+                </div>
             </div>
         </div>
     </div>
