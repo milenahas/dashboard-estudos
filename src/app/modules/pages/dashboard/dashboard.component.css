@@ -6,13 +6,6 @@
     border-bottom: none;
 }
 
-.card {
-    border: solid 1px rgb(248, 248, 248);
-    background-color: rgb(248, 248, 248);
-    border-radius: 10px;
-    background-color: white;
-}
-
 .sub-title {
     font-size: 13px;
     font-weight: 600;
@@ -44,33 +37,62 @@ p {
 }
 
 .card-principal {
+    border: solid 1px rgb(248, 248, 248);
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px;
+    background-color: white;
     overflow-y: hidden;
+}
+
+.card-pai {
+    border: none; 
+    height: 100%;
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px;
+    background-color: white;
+    overflow-y: hidden;
+}
+
+.card-secundario {
+    border: solid 1px rgb(248, 248, 248);
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px;
+    background-color: white;
+    overflow-y: hidden;
+}
+
+.card-pai .card-header {
+    background: none;
 }
 
 .card-principal:hover {
     overflow-y: auto;
 }
 
+.row-pai {
+    height: 45vh;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
     height: 10px;
-  }
+}
   
-  /* Track */
-  ::-webkit-scrollbar-track {
+/* Track */
+::-webkit-scrollbar-track {
     background: #f1f1f1; 
     height: 10px;
-  }
+}
    
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: rgb(226, 226, 226); 
     height: 10px;
-  }
+}
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: rgb(177, 177, 177);
     height: 10px; 
-  }
+}

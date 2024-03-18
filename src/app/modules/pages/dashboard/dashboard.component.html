@@ -1,9 +1,9 @@
-<div class="container-fluid">
-    <div class="row mt-4">
+<div class="container-fluid" style="max-height: 100vh; margin-bottom: 50px;">
+    <div class="row pt-2 pb-2">
         <div class="col-md-3">
             <div class="card card-principal" style="border: none; height: 90vh; ">
-                <div class="card-body">
-                    <div class="card card-shadow mt-2" *ngFor="let curso of cursosEmAndamento">
+                <div class="card-body" style="height: 100%;">
+                    <div class="card card-secundario card-shadow mt-2" *ngFor="let curso of cursosEmAndamento">
                         <div class="card-body p-0 m-0">
                             <div class="d-flex p-4">
                                 <div class="me-auto"><p class="texto-basico">{{curso.nome}}</p></div>
@@ -18,23 +18,66 @@
         </div>
 
         <div class="col-md-7">
-            <div class="card card-principal" style="border: none; height: 90vh; ">
-                <div class="card-header" style="background: none;">
-                    <p class="sub-title">Exibição de cursos em andamento e finalizados</p>
+            <div class="row row-pai">
+                <div class="col-md-12">
+                    <div class="card card-pai">
+                        <div class="card-header">
+                            <p class="sub-title">Exibição de cursos em andamento e finalizados</p>
+                        </div>
+                        
+                        <div class="card-body">
+                            <div id="chart">
+                                <apx-chart
+                                  [series]="chartOptions.series"
+                                  [chart]="chartOptions.chart"
+                                  [colors]="chartOptions.colors"
+                                  [xaxis]="chartOptions.xaxis"
+                                  [stroke]="chartOptions.stroke"
+                                  [tooltip]="chartOptions.tooltip"
+                                  [dataLabels]="chartOptions.dataLabels"
+                                ></apx-chart>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="card-body">
-                    <div id="chart">
-                        <apx-chart
-                          [series]="chartOptions.series"
-                          [chart]="chartOptions.chart"
-                          [colors]="chartOptions.colors"
-                          [xaxis]="chartOptions.xaxis"
-                          [stroke]="chartOptions.stroke"
-                          [tooltip]="chartOptions.tooltip"
-                          [dataLabels]="chartOptions.dataLabels"
-                        ></apx-chart>
-                      </div>
+            </div>
+
+            <div class="row row-pai mb-0">
+                <div class="col-md-12">
+                    <div class="card card-pai">
+                        <div class="card-header">
+                            <p class="sub-title">Próximos cursos</p>
+                        </div>
+                        
+                        <!-- <div class="card-body pb-0">
+                             <div class="row" style="height: 100%;">
+                                <div class="card me-2" style="width: 18rem;">
+                                    <div class="text-center">
+                                        <img src="../../../../assets/img/angular.png" class="card-img-top" alt="..." style="width: 40%; margin-top: 20px">
+                                    </div>
+                                    
+                                    <div class="card-body">
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+
+                                <div class="card me-2" style="width: 18rem;">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+
+                                <div class="card" style="width: 18rem;">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div> -->
+                    </div>
+                    
                 </div>
             </div>
         </div>
