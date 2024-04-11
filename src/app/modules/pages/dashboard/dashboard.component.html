@@ -19,25 +19,9 @@
 
         <div class="col-md-7">
             <div class="row row-pai">
-                <div class="col-md-12">
+                <div class="col-md-12 mb-2">
                     <div class="card card-pai">
-                        <div class="card-header">
-                            <p class="sub-title">Exibição de cursos em andamento e finalizados</p>
-                        </div>
-                        
-                        <div class="card-body">
-                            <div id="chart">
-                                <apx-chart
-                                  [series]="chartOptions.series"
-                                  [chart]="chartOptions.chart"
-                                  [colors]="chartOptions.colors"
-                                  [xaxis]="chartOptions.xaxis"
-                                  [stroke]="chartOptions.stroke"
-                                  [tooltip]="chartOptions.tooltip"
-                                  [dataLabels]="chartOptions.dataLabels"
-                                ></apx-chart>
-                            </div>
-                        </div>
+                        <app-cursos-em-andamento></app-cursos-em-andamento>
                     </div>
                 </div>
             </div>
@@ -45,39 +29,8 @@
             <div class="row row-pai mb-0">
                 <div class="col-md-12">
                     <div class="card card-pai">
-                        <div class="card-header">
-                            <p class="sub-title">Próximos cursos</p>
-                        </div>
-                        
-                        <!-- <div class="card-body pb-0">
-                             <div class="row" style="height: 100%;">
-                                <div class="card me-2" style="width: 18rem;">
-                                    <div class="text-center">
-                                        <img src="../../../../assets/img/angular.png" class="card-img-top" alt="..." style="width: 40%; margin-top: 20px">
-                                    </div>
-                                    
-                                    <div class="card-body">
-                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-
-                                <div class="card me-2" style="width: 18rem;">
-                                    <img src="..." class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-
-                                <div class="card" style="width: 18rem;">
-                                    <img src="..." class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div> -->
+                        <app-proximos-cursos></app-proximos-cursos>
                     </div>
-                    
                 </div>
             </div>
         </div>

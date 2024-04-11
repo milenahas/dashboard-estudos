@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ApexAxisChartSeries, ApexChart, ApexDataLabels, ApexStroke, ApexTooltip, ApexXAxis, ChartComponent } from 'ng-apexcharts';
 import { Cursos } from '../../shared/cursos';
+import { DashboardServiceService } from '../../shared/dashboard-service.service';
 declare var bootstrap: any;
 
 export type ChartOptions = {
@@ -22,56 +23,8 @@ export class DashboardComponent implements OnInit {
   cursosEmAndamento: Cursos[] = [];
 
   @ViewChild("chart") chart: ChartComponent;
-  public chartOptions: Partial<ChartOptions> | any;
 
-  constructor() {
-    this.chartOptions = {
-      series: [
-        {
-          name: "Em andamento",
-          data: [1, 2, 2, 3, 5, 2, 1, 3, 2, 1, 3, 3]
-        },
-        {
-          name: "Finalizados",
-          data: [1, 3, 2, 2, 4, 3, 2, 3, 1, 3, 2, 2]
-        }
-      ],
-      chart: {
-        height: 350,
-        type: "area"
-      },
-      colors: ["#ff6172", "#ff9f7b"],
-      dataLabels: {
-        enabled: false
-      },
-      stroke: {
-        curve: "smooth",
-        width: 1.5,
-      },
-      xaxis: {
-        categories: [
-          "Janeiro",
-          "Fevereiro",
-          "Março",
-          "Abril",
-          "Maio",
-          "Junho",
-          "Julho",
-          "Agosto",
-          "Setembro",
-          "Outubro",
-          "Dezembro"
-        ]
-      },
-      tooltip: {
-        x: {
-          format: "dd/MM/yy HH:mm"
-        }
-      }
-    };
-   }
-
-  
+  constructor(private dashboardService: DashboardServiceService) { }
 
   ngOnInit(): void {
     for (let i = 0; i < 3; i ++){

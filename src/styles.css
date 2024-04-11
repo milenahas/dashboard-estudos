@@ -4,6 +4,13 @@
     font-family: 'Cabin', sans-serif;
 }
 
-body {
-    height: 90vh;
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.body, html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #F9F8FC;
 }

@@ -5,17 +5,23 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import { HttpClientModule } from '@angular/common/http';
+import { CursosEmAndamentoComponent } from './components/cursos-em-andamento/cursos-em-andamento.component';
+import { ProximosCursosComponent } from './components/proximos-cursos/proximos-cursos.component';
 
 
 @NgModule({
   declarations: [
-    DashboardComponent
+    DashboardComponent,
+    CursosEmAndamentoComponent,
+    ProximosCursosComponent
   ],
   imports: [
     CommonModule,
     DashboardRoutingModule,
     NgbModule,
-    NgApexchartsModule
+    NgApexchartsModule,
+    HttpClientModule
   ]
 })
 export class DashboardModule { }
