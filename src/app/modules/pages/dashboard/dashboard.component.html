@@ -1,6 +1,6 @@
 <div class="container-fluid" style="max-height: 100vh; margin-bottom: 50px;">
-    <div class="row pt-2 pb-2">
-        <div class="col-md-3">
+    <div class="row pt-3 pb-2 ps-2 pe-2">
+        <div class="col-md-2 pe-0">
             <div class="card card-principal" style="border: none; height: 90vh; ">
                 <div class="card-body" style="height: 100%;">
                     <div class="card card-secundario card-shadow mt-2" *ngFor="let curso of cursosEmAndamento">
@@ -17,17 +17,17 @@
             </div>
         </div>
 
-        <div class="col-md-7">
+        <div class="col-md-10">
             <div class="row row-pai">
-                <div class="col-md-12 mb-2">
+                <div class="col-md-9 mb-2">
                     <div class="card card-pai">
                         <app-cursos-em-andamento></app-cursos-em-andamento>
                     </div>
                 </div>
             </div>
 
-            <div class="row row-pai mb-0">
-                <div class="col-md-12">
+            <div class="row row-pai mb-0" style="max-width: 100vw;">
+                <div class="col-md-12" style="max-height: 100%;">
                     <div class="card card-pai">
                         <app-proximos-cursos></app-proximos-cursos>
                     </div>

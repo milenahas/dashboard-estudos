@@ -8,13 +8,15 @@ import { NgApexchartsModule } from 'ng-apexcharts';
 import { HttpClientModule } from '@angular/common/http';
 import { CursosEmAndamentoComponent } from './components/cursos-em-andamento/cursos-em-andamento.component';
 import { ProximosCursosComponent } from './components/proximos-cursos/proximos-cursos.component';
+import { CardsComponent } from './components/cards/cards.component';
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
     CursosEmAndamentoComponent,
-    ProximosCursosComponent
+    ProximosCursosComponent,
+    CardsComponent
   ],
   imports: [
     CommonModule,
