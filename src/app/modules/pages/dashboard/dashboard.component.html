@@ -24,6 +24,27 @@
                         <app-cursos-em-andamento></app-cursos-em-andamento>
                     </div>
                 </div>
+                
+                <div class="col-md-3 mb-2 ps-0">
+                    <div class="card card-pai">
+                        <div class="card-body text-center">
+                            <img src="../../../../assets/img/pomodoro.png" style="width: 200px;">
+                            <br>
+                            <p class="pomodoro-text">Iniciar Pomodoro</p>
+                            <br>
+                            <p class="pomodoro-count">
+                                {{pomodoroMinutes}}
+                            </p>
+                            <br>
+                            <button *ngIf="!pomodoroOn" class="btn btn-lg btn-count" (click)="comecarPomodoro()">
+                                Começar
+                            </button>
+                            <button *ngIf="pomodoroOn" class="btn btn-lg btn-cancelar" (click)="cancelarPomodoro()">
+                                Cancelar
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="row row-pai mb-0" style="max-width: 100vw;">

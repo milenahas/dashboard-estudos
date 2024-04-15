@@ -28,6 +28,36 @@
     border-bottom: solid 8px #f77f73;
 }
 
+.pomodoro-text {
+    color: #BABABA;
+}
+
+.pomodoro-count {
+    color: #BABABA;
+    font-size: 70px;
+}
+
+.btn-count {
+    background-color: #F77F73;
+    color: white;
+    font-size: 14px;
+    padding: 10px 30px 10px 30px;
+}
+
+.btn-cancelar {
+    background-color: white;
+    color: #F77F73;
+    border: solid 1px #F77F73;
+    font-size: 14px;
+    padding: 10px 30px 10px 30px;
+}
+
+.btn-count:hover {
+    background-color: white;
+    color: #F77F73;
+    border: solid 1px #F77F73;
+}
+
 p {
     display: inline;
 }

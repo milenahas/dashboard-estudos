@@ -10,8 +10,19 @@
     font-weight: 400;
 }
 
+.card {
+    border: none;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.08);
+}
+
 .main-button {
     font-size: 12px;
     background-color: #F77F73;
     color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: #F77F73;
+    border: solid 1px #F77F73;
 }
