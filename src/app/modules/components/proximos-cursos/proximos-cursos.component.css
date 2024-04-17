@@ -36,3 +36,36 @@
     background: rgb(177, 177, 177);
     height: 5px; 
 }
+
+
+
+/* Para o Firefox */
+/* width */
+* {
+    scrollbar-width: thin;
+}
+
+/* Track e Handle para a barra de rolagem vertical no Firefox */
+* {
+    scrollbar-color: rgb(226, 226, 226) #f1f1f1;
+}
+
+/* Track e Handle para a barra de rolagem horizontal no Firefox */
+* {
+    scrollbar-color: rgb(226, 226, 226) transparent;
+}
+
+/* Track para a barra de rolagem horizontal no Firefox */
+*::-moz-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Handle para a barra de rolagem horizontal no Firefox */
+*::-moz-scrollbar-thumb {
+    background-color: rgb(226, 226, 226);
+}
+
+/* Handle on hover para a barra de rolagem horizontal no Firefox */
+*::-moz-scrollbar-thumb:hover {
+    background-color: rgb(177, 177, 177);
+}

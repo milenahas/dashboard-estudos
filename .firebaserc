@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "dashboard-estudos-dd513"
+  },
+    "targets": {
+    "dashboard-estudos-dd513": {
+      "hosting": {
+        "prod": [
+          "dashboard-estudos-dd513"
+        ]
+      }
+    }
+  }
+}
