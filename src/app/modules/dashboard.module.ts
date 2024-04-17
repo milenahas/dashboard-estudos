@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CursosEmAndamentoComponent } from './components/cursos-em-andamento/cursos-em-andamento.component';
 import { ProximosCursosComponent } from './components/proximos-cursos/proximos-cursos.component';
 import { CardsComponent } from './components/cards/cards.component';
+import { PomodoroCardComponent } from './components/pomodoro-card/pomodoro-card.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { CardsComponent } from './components/cards/cards.component';
     DashboardComponent,
     CursosEmAndamentoComponent,
     ProximosCursosComponent,
-    CardsComponent
+    CardsComponent,
+    PomodoroCardComponent
   ],
   imports: [
     CommonModule,
