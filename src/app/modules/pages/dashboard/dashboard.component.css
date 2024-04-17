@@ -44,6 +44,10 @@
     padding: 10px 30px 10px 30px;
 }
 
+.pomodoro-card {
+    height: 20vh;
+}
+
 .btn-cancelar {
     background-color: white;
     color: #F77F73;

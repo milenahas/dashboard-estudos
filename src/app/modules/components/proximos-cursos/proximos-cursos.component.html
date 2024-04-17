@@ -2,11 +2,11 @@
     <h6 class="sub-title mt-2">Próximos cursos</h6>
 </div>
 
-<div class="card-body">
+<div class="card-body" style="height: 100%;">
      <div style="height: 100%;">
-        <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center" style="height: 100%;">
             <ng-container *ngFor="let card of cards">
-                <div>
+                <div style="height: 100%;">
                     <app-cards [card]="card"></app-cards>
                 </div>
             </ng-container>
