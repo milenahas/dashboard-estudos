@@ -23,6 +23,7 @@ export class PomodoroCardComponent implements OnInit {
 
   comecarPomodoro(){
     let initialValue = moment().minute(25).second(0);
+    this.pomodoroOn = true;
 
     this.interval = setInterval(() => {
       initialValue.subtract(1, 'seconds').format('mm:ss');

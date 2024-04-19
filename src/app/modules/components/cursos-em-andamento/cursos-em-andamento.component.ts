@@ -11,6 +11,7 @@ export class CursosEmAndamentoComponent implements OnInit {
   chartOptions: Partial<ChartOptions> | any;
 
   loading: boolean = false;
+  interval: any;
 
   constructor() {
 
@@ -66,7 +67,12 @@ export class CursosEmAndamentoComponent implements OnInit {
       }
     };
 
-    this.loading = false;
+    this.interval = setInterval(() => {
+      this.loading = false;
+      clearInterval(this.interval);
+    }, 1000);
+
+    
   }
 
 }
