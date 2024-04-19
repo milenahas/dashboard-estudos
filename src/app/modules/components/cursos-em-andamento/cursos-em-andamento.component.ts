@@ -10,13 +10,16 @@ export class CursosEmAndamentoComponent implements OnInit {
 
   chartOptions: Partial<ChartOptions> | any;
 
+  loading: boolean = false;
+
   constructor() {
 
    }
 
   ngOnInit(): void {
     var vh: any = document.getElementById('card-pai-height')
-    console.log(vh.clientHeight)
+
+    this.loading = true;
 
     this.chartOptions = {
       series: [
@@ -62,6 +65,8 @@ export class CursosEmAndamentoComponent implements OnInit {
         }
       }
     };
+
+    this.loading = false;
   }
 
 }

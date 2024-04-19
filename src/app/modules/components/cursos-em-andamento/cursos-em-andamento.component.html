@@ -2,16 +2,24 @@
     <h6 class="sub-title mt-2">Exibição de cursos em andamento e finalizados</h6>
 </div>
 
-<div class="card-body">
-    <div id="chart">
-        <apx-chart
-          [series]="chartOptions.series"
-          [chart]="chartOptions.chart"
-          [colors]="chartOptions.colors"
-          [xaxis]="chartOptions.xaxis"
-          [stroke]="chartOptions.stroke"
-          [tooltip]="chartOptions.tooltip"
-          [dataLabels]="chartOptions.dataLabels"
-        ></apx-chart>
+<div class="card-body" style="height: 100%">
+    <div id="chart" style="height: 100%">
+        <ng-container *ngIf="!loading else carregando">
+            <apx-chart
+            [series]="chartOptions.series"
+            [chart]="chartOptions.chart"
+            [colors]="chartOptions.colors"
+            [xaxis]="chartOptions.xaxis"
+            [stroke]="chartOptions.stroke"
+            [tooltip]="chartOptions.tooltip"
+            [dataLabels]="chartOptions.dataLabels"
+            ></apx-chart>
+        </ng-container>
     </div>
 </div>
+
+<ng-template #carregando>
+    <div class="d-flex align-items-center justify-content-center" style="height: 100%">
+        <i class="fas fa-spinner fa-spin text-primary" style="width: 45vh"></i>
+    </div>
+</ng-template>
