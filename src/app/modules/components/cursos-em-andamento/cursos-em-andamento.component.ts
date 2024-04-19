@@ -14,14 +14,6 @@ export class CursosEmAndamentoComponent implements OnInit {
   interval: any;
 
   constructor() {
-
-   }
-
-  ngOnInit(): void {
-    var vh: any = document.getElementById('card-pai-height')
-
-    this.loading = true;
-
     this.chartOptions = {
       series: [
         {
@@ -34,7 +26,7 @@ export class CursosEmAndamentoComponent implements OnInit {
         }
       ],
       chart: {
-        height: vh.clientHeight - 100,
+        height: 300,
         type: "area"
       },
       colors: ["#ff6172", "#ff9f7b"],
@@ -65,7 +57,14 @@ export class CursosEmAndamentoComponent implements OnInit {
           format: "dd/MM/yy HH:mm"
         }
       }
-    };
+    }
+   }
+
+  ngOnInit(): void {
+    this.loading = true;
+
+    var vh: any = document.getElementById('card-pai-height')
+    this.chartOptions.chart.height = vh.clientHeight - 100
 
     this.interval = setInterval(() => {
       this.loading = false;
