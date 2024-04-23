@@ -63,8 +63,11 @@ export class CursosEmAndamentoComponent implements OnInit {
   ngOnInit(): void {
     this.loading = true;
 
-    var vh: any = document.getElementById('card-pai-height')
-    this.chartOptions.chart.height = vh.clientHeight - 100
+    var vh: any = document.getElementById('card-pai-height');
+    
+    if (vh.clientHeight > 300){
+      this.chartOptions.chart.height = vh.clientHeight - 100
+    }
 
     this.interval = setInterval(() => {
       this.loading = false;

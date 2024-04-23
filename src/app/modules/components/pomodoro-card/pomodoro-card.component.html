@@ -10,6 +10,14 @@
     <button *ngIf="!pomodoroOn" class="btn btn-lg btn-count" (click)="comecarPomodoro()">
         Começar
     </button>
+    <ng-container *ngIf="pauseOn && pomodoroOn">
+        <button class="btn btn-lg btn-count" disabled>
+            Em pausa
+        </button>
+
+        <br>
+    </ng-container>
+    
     <button *ngIf="pomodoroOn" class="btn btn-lg btn-cancelar" (click)="cancelarPomodoro()">
         Cancelar
     </button>

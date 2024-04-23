@@ -12,9 +12,11 @@ export class PomodoroCardComponent implements OnInit {
   maxMin = 25;
 
   pomodoroOn: boolean = false;
+  pauseOn: boolean = false;
   
   interval: any;
   timeout: any;
+  pause: any;
 
   constructor() { }
 
@@ -39,8 +41,30 @@ export class PomodoroCardComponent implements OnInit {
       
       clearInterval(this.interval);
       clearInterval(this.timeout);
+
       this.pomodoroOn = false;
+
+      this.setPause();
     }, this.maxMin * 60000);
+  }
+
+  setPause(){
+    this.pauseOn = true;
+    let initialValue = moment().minute(5).second(0);
+      
+    this.interval = setInterval(() => {
+      initialValue.subtract(1, 'seconds').format('mm:ss');
+      this.pomodoroMinutes = initialValue.format('mm:ss');
+      this.pomodoroOn = true;
+    }, 1000);
+
+    this.pause = setInterval(() => {
+      this.pauseOn = false;
+      clearInterval(this.pause);
+      clearInterval(this.interval);
+
+      this.comecarPomodoro();
+    }, 5 * 60000);
   }
 
   cancelarPomodoro(){
