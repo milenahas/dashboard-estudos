@@ -38,6 +38,6 @@ p {
 
 @media screen and (max-width: 980px) {
     .pomodoro-width {
-      width: 8px;
+      width: 8vw;
     }
-  }
+}
