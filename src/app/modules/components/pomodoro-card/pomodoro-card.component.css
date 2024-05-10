@@ -7,6 +7,10 @@
     font-size: 7vh;
 }
 
+.pomodoro-width {
+    width: 10vw;
+}
+
 .btn-count {
     background-color: #F77F73;
     color: white;
@@ -31,3 +35,9 @@
 p {
     display: inline;
 }
+
+@media screen and (max-width: 980px) {
+    .pomodoro-width {
+      width: 8px;
+    }
+  }
