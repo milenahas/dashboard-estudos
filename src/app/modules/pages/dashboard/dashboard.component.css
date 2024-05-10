@@ -172,7 +172,8 @@ p {
         margin-bottom: 20px;
         overflow-y: auto;
         margin-left: 0px;
-        padding-left: 0px
+        padding-left: 0px;
+        padding-right: 0px;
     }
     
     .card-principal {
@@ -180,6 +181,6 @@ p {
     }
 
     .row-pai {
-        height: auto
+        height: auto;
     }
   }
