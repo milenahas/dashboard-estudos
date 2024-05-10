@@ -36,8 +36,20 @@ p {
     display: inline;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1400px) {
     .pomodoro-width {
       width: 8vw;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .pomodoro-width {
+      width: 30vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .pomodoro-width {
+      width: 50vw;
     }
 }
