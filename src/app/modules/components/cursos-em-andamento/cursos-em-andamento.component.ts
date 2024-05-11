@@ -64,10 +64,18 @@ export class CursosEmAndamentoComponent implements OnInit {
     this.loading = true;
 
     var vh: any = document.getElementById('card-pai-height');
+    var vhPai: any = document.getElementById('card-pai-height');
     
-    if (vh.clientHeight > 300){
-      this.chartOptions.chart.height = vh.clientHeight - 100
+    if (vhPai.clientWidth > 800){
+      this.chartOptions.chart.height = vh.clientHeight + 100
+    } else if (vhPai.clientWidth > 500){
+      console.log("a");
+      this.chartOptions.chart.height = vh.clientHeight;
+    } else {
+      this.chartOptions.chart.height = vh.clientHeight + 100;
     }
+
+    console.log(vhPai.clientWidth);
 
     this.interval = setInterval(() => {
       this.loading = false;

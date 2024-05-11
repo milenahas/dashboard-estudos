@@ -7,6 +7,12 @@ img {
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.08); 
 }
 
+.sub-title {
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 4px;
+}
+
 p {
     margin-right: 40px;
     cursor: pointer;
@@ -19,4 +25,14 @@ p {
 p:hover{
     color: #ff6172;
     text-decoration: none;
+}
+
+@media screen and (min-width: 980px) {
+    p {
+        font-size: 12px;
+    }
+
+    img {
+        width: 100px;
+    }
 }
