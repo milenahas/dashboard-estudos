@@ -80,8 +80,7 @@ p {
 }
 
 .card-pai {
-    border: none; 
-    height: 100%;
+    border: none;
     background-color: rgb(248, 248, 248);
     border-radius: 10px;
     background-color: white;
@@ -105,7 +104,8 @@ p {
 }
 
 .row-pai {
-    /* height: 30%; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* width */
@@ -163,44 +163,9 @@ p {
     background-color: rgb(177, 177, 177);
 }
 
-.card-pai-proximos-cursos {
-    height: 48vh;
-}
-
 .margin-mobile {
     margin-bottom: 20px;
     overflow-y: auto;
-}
-
-@media screen and (min-width: 4000px) {
-    
-    
-    .card-principal {
-        height: 50vh;
-    }
-
-    .row-pai {
-        height: auto;
-    }
-  }
-
-  @media screen and (max-width: 1566px) {
-
-  }
-
-@media screen and (max-width: 1400px) {
-
-}
-
-@media screen and (max-width: 1400px) {
-    .card-proximos-cursos {
-        max-height: 40vh;
-    }
-
-    .card-pai-proximos-cursos {
-        overflow-y: auto;
-        height: 30vh;
-    }
 }
 
 @media screen and (max-width: 400px) {

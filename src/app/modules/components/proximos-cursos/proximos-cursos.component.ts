@@ -16,40 +16,40 @@ export class ProximosCursosComponent implements OnInit {
     this.cards.push({
       imgSrc: '../../../../assets/img/angular-logo.png',
       nomeCurso: 'Curso Angular: testes automatizados com Jasmine e Karma',
-      descricaoCurso: 'Aprenda a dominar testes no Angular com nosso curso de Jasmine e  Karma. Explore técnicas avançadas de testes de unidade e integração para  garantir a qualidade do seu código.'
+      descricaoCurso: 'Aprenda a dominar testes no Angular com nosso curso de Jasmine e Karma. Explore técnicas avançadas de testes de unidade e integração para  garantir a qualidade do seu código. Torne-se um especialista em  desenvolvimento com testes automatizados!'
     });
 
     this.cards.push({
       imgSrc: '../../../../assets/img/angular-logo.png',
       nomeCurso: 'Curso Angular: testes automatizados com Jasmine e Karma',
-      descricaoCurso: 'Aprenda a dominar testes no Angular com nosso curso de Jasmine e  Karma. Explore técnicas avançadas de testes de unidade e integração para  garantir a qualidade do seu código.'
+      descricaoCurso: 'Aprenda a dominar testes no Angular com nosso curso de Jasmine e Karma. Explore técnicas avançadas de testes de unidade e integração para  garantir a qualidade do seu código. Torne-se um especialista em  desenvolvimento com testes automatizados!'
     })
 
     this.cards.push({
       imgSrc: '../../../../assets/img/angular-logo.png',
       nomeCurso: 'Curso Angular: testes automatizados com Jasmine e Karma',
-      descricaoCurso: 'Aprenda a dominar testes no Angular com nosso curso de Jasmine e  Karma. Explore técnicas avançadas de testes de unidade e integração para  garantir a qualidade do seu código.'
+      descricaoCurso: 'Aprenda a dominar testes no Angular com nosso curso de Jasmine e Karma. Explore técnicas avançadas de testes de unidade e integração para  garantir a qualidade do seu código. Torne-se um especialista em  desenvolvimento com testes automatizados!'
     })
 
     this.cards.push({
       imgSrc: '../../../../assets/img/angular-logo.png',
       nomeCurso: 'Curso Angular: testes automatizados com Jasmine e Karma',
-      descricaoCurso: 'Aprenda a dominar testes no Angular com nosso curso de Jasmine e  Karma. Explore técnicas avançadas de testes de unidade e integração para  garantir a qualidade do seu código.'
+      descricaoCurso: 'Aprenda a dominar testes no Angular com nosso curso de Jasmine e Karma. Explore técnicas avançadas de testes de unidade e integração para  garantir a qualidade do seu código. Torne-se um especialista em  desenvolvimento com testes automatizados!'
     })
     this.cards.push({
       imgSrc: '../../../../assets/img/angular-logo.png',
       nomeCurso: 'Curso Angular: testes automatizados com Jasmine e Karma',
-      descricaoCurso: 'Aprenda a dominar testes no Angular com nosso curso de Jasmine e  Karma. Explore técnicas avançadas de testes de unidade e integração para  garantir a qualidade do seu código.'
+      descricaoCurso: 'Aprenda a dominar testes no Angular com nosso curso de Jasmine e  Karma. Aprenda a dominar testes no Angular com nosso curso de Jasmine e  Karma.'
     })
     this.cards.push({
       imgSrc: '../../../../assets/img/angular-logo.png',
       nomeCurso: 'Curso Angular: testes automatizados com Jasmine e Karma',
-      descricaoCurso: 'Aprenda a dominar testes no Angular com nosso curso de Jasmine e  Karma. Explore técnicas avançadas de testes de unidade e integração para  garantir a qualidade do seu código.'
+      descricaoCurso: 'Aprenda a dominar testes no Angular com nosso curso de Jasmine e  Karma. Aprenda a dominar testes no Angular com nosso curso de Jasmine e  Karma.'
     })
     this.cards.push({
       imgSrc: '../../../../assets/img/angular-logo.png',
       nomeCurso: 'Curso Angular: testes automatizados com Jasmine e Karma',
-      descricaoCurso: 'Aprenda a dominar testes no Angular com nosso curso de Jasmine e  Karma. Explore técnicas avançadas de testes de unidade e integração para  garantir a qualidade do seu código.'
+      descricaoCurso: 'Aprenda a dominar testes no Angular com nosso curso de Jasmine e  Karma. Aprenda a dominar testes no Angular com nosso curso de Jasmine e  Karma.'
     })
     
   }

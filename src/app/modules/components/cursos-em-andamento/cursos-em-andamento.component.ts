@@ -26,7 +26,7 @@ export class CursosEmAndamentoComponent implements OnInit {
         }
       ],
       chart: {
-        height: 300,
+        height: 250,
         type: "area"
       },
       colors: ["#ff6172", "#ff9f7b"],
@@ -63,19 +63,13 @@ export class CursosEmAndamentoComponent implements OnInit {
   ngOnInit(): void {
     this.loading = true;
 
-    var vh: any = document.getElementById('card-pai-height');
-    var vhPai: any = document.getElementById('card-pai-height');
-    
-    if (vhPai.clientWidth > 800){
-      this.chartOptions.chart.height = vh.clientHeight + 100
-    } else if (vhPai.clientWidth > 500){
-      console.log("a");
-      this.chartOptions.chart.height = vh.clientHeight;
-    } else {
-      this.chartOptions.chart.height = vh.clientHeight + 100;
-    }
+    var navigatorWidth: any = document.getElementById('card-pai-height');
 
-    console.log(vhPai.clientWidth);
+    if (navigatorWidth.clientWidth > 1400) {
+      this.chartOptions.chart.height = 250;
+    } else {
+      this.chartOptions.chart.height = 150;
+    }
 
     this.interval = setInterval(() => {
       this.loading = false;

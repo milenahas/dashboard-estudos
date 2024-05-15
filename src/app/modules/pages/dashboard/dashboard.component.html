@@ -1,8 +1,8 @@
-<div class="container-fluid" id="container-pai" style="max-height: 100vh; margin-bottom: 50px;">
-    <div class="row pt-3 pb-2 ps-2 pe-2">
-        <div class="col-md-2 pe-0 margin-mobile">
-            <div class="card card-principal">
-                <div class="card-body" style="height: 100%;">
+<div class="container-fluid" id="container-pai" style="height: 100%">
+    <div class="row pt-3 pb-2 ps-2 pe-2 h-100">
+        <div class="col-md-2 p-2 pb-0 h-100">
+            <div class="card card-principal h-100">
+                <div class="card-body h-100 pb-0" style="height: 100%;">
                     <div class="card card-secundario card-shadow mt-2" *ngFor="let curso of cursosEmAndamento">
                         <div class="card-body p-0 m-0">
                             <div class="d-flex p-4">
@@ -17,28 +17,30 @@
             </div>
         </div>
 
-        <div class="col-md-10 margin-mobile">
-            <div class="row row-pai">
-                <div class="col-md-9 mb-2 margin-mobile">
-                    <div id="card-pai-height" class="card card-pai">
-                        <app-cursos-em-andamento></app-cursos-em-andamento>
+        <div class="col-md-10 p-2">
+            <div [ngClass]="dashboardService.navigatorWidth > 450 ? 'd-flex' : ''" class="align-items-sm-stretch bg-light h-100 w-100">
+                <div class="w-100" style="background-color: pink;">
+                    <div class="row row-pai mb-2 h-50">
+                        <div class="col-md-9 margin-mobile h-100">
+                            <div class="card card-pai h-100">
+                                <app-cursos-em-andamento></app-cursos-em-andamento>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 ps-0 margin-mobile">
+                            <div class="card card-pai h-100">
+                                <app-pomodoro-card></app-pomodoro-card>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="col-md-3 mb-2 ps-0 margin-mobile">
-                    <div class="card card-pai">
-                        <app-pomodoro-card></app-pomodoro-card>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row row-pai mb-0">
-                <div class="col-md-12 card-proximos-cursos" >
-                    <div class="card card-pai card-pai-proximos-cursos pb-4">
-                        <app-proximos-cursos></app-proximos-cursos>
+                    <div class="row row-pai h-50">
+                        <div class="col-md-12 h-100" style="height: 100%">
+                            <app-proximos-cursos></app-proximos-cursos>
+                        </div>
                     </div>
                 </div>
-            </div>
+              </div>
         </div>
     </div>
 </div>

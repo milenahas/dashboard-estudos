@@ -25,9 +25,10 @@ export class DashboardComponent implements OnInit {
 
   @ViewChild("chart") chart: ChartComponent;
 
-  constructor(private dashboardService: DashboardServiceService) { }
+  constructor(public dashboardService: DashboardServiceService) { }
 
   ngOnInit(): void {
+    console.log(this.dashboardService.navigatorWidth);
     for (let i = 0; i < 3; i ++){
       this.cursosEmAndamento.push({
         nome: "Angular",
