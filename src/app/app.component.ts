@@ -10,7 +10,7 @@ export class AppComponent  implements OnInit, AfterViewInit{
   title = 'projeto-dashboard';
 
   ngOnInit(): void {
-
+    console.log("teste");
   }
 
   constructor(private elementRef: ElementRef) {}
